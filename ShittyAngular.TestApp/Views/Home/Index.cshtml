@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html ng-app="shitty">
+<head>
+    <link rel="stylesheet" href="../../Content/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../Content/application.css" />
+</head>
+<body>
+    <div class="nav-wrapper has-dropdown">
+        <div class="nav-content">
+            <div class="wrapper">
+                <div class="nav-content-layout">
+                    <div class="nav-list">
+                        <nw-page-nav-item>Users</nw-page-nav-item>
+                        <nw-page-nav-item>Notes</nw-page-nav-item>
+                    </div>
+                </div>
+                <div class="nav-content-layout">
+                    <nw-session></nw-session>
+                    <input class="form-input-search" type="text" placeholder="Search..." ng-model="search">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-wrapper">
+        <div ng-view></div>
+    </div>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.29/angular.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.29/angular-route.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.29/angular-resource.js"></script>
+    <script type="text/javascript" src="../../Scripts/Angular/app.js"></script>
+    <script type="text/javascript" src="../../Scripts/Angular/routes.js"></script>
+</body>
+</html>
