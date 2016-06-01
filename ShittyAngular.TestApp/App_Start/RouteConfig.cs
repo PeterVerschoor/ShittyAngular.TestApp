@@ -11,8 +11,6 @@ namespace ShittyAngular.TestApp
 
             routes.MapRoute("Default", "{controller}/{action}/{id}",
                 new {controller = "Home", action = "Index", id = UrlParameter.Optional});
-
-            routes.MapRoute("Home", "{*url}", new {controller = "Home", action = "Index"});
         }
     }
 }

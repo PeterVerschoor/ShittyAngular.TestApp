@@ -1,1 +1,1 @@
-﻿velocityAngular.module('shitty', []).controller('');
+﻿angular.module('shitty', ['ngRoute', 'ngResource']);

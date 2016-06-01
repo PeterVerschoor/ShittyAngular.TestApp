@@ -1,0 +1,31 @@
+﻿<div>
+    <label for="city-text">City: </label><input id="city-text" type="text" ng-model="city"/>
+    <button class="btn" ng-click="updateWeather()">Update</button>
+    <ul>
+        <li>
+            <b>Input:</b> {{ city }}
+        </li>
+        <li>
+            <b>City:</b> {{ weather.name }}
+        </li>
+        <li><b>{{ weather.weather[0].main }}</b><img ng-src="{{icon}}"/></li>
+        <li>
+            <b>Wind (m/s):</b> {{ weather.wind.speed + " " + windDirectionString }}
+        </li>
+        <li>
+            <b>Temp min (C):</b> {{ weather.main.temp_min - 273 | number:1}}
+        </li>
+        <li>
+            <b>Temp max (C):</b> {{ weather.main.temp_max - 273 | number:1}}
+        </li>
+        <li>
+            <b>Current Temp (C):</b> {{ weather.main.temp - 273 | number:1}}
+        </li>
+        <li>
+            <b>pressure:</b> {{ weather.main.pressure }}
+        </li>
+        <li>
+            <b>humidity:</b> {{ weather.main.humidity }}
+        </li>
+    </ul>
+</div>
