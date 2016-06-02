@@ -12,7 +12,6 @@ namespace ShittyAngular.TestApp
     {
         public void Configuration(IAppBuilder app)
         {
-            ConfigureAuth(app);
         }
     }
 }
